@@ -6,29 +6,21 @@
     <dimen name="btns_padding">@dimen/_8sdp</dimen>
     <dimen name="btns_height">@dimen/_35sdp</dimen>
     <dimen name="verify_btn_margin_top">@dimen/_15sdp</dimen>
-
     <dimen name="grid_margin_left">@dimen/_20sdp</dimen>
     <dimen name="grid_margin_top">@dimen/_20sdp</dimen>
-
-
     <dimen name="logo_height">@dimen/_80sdp</dimen>
     <dimen name="logo_width">@dimen/_150sdp</dimen>
     <dimen name="screen_padding">@dimen/_15sdp</dimen>
-
     <dimen name="button_font_size">@dimen/_15sdp</dimen>
-
     <dimen name="ic_back_width">@dimen/_13sdp</dimen>
     <dimen name="ic_back_height">@dimen/_10sdp</dimen>
     <dimen name="back_btn_margin_start">@dimen/_17sdp</dimen>
     <dimen name="back_btn_margin_top">@dimen/_22sdp</dimen>
-
     <dimen name="verify_margin_top">@dimen/_55sdp</dimen>
     <dimen name="verify_font_size">@dimen/_18sdp</dimen>
-
     <dimen name="verify_description_font_size">@dimen/_11sdp</dimen>
     <dimen name="verify_description_width">@dimen/_165sdp</dimen>
     <dimen name="verify_description_margin_top">@dimen/_4sdp</dimen>
-
     <dimen name="cardview_margin_top">@dimen/_40sdp</dimen>
     <dimen name="cardview_padding">@dimen/_20sdp</dimen>
 
