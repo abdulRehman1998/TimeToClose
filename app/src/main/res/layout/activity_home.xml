@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:padding="@dimen/screen_padding"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/_15sdp"
+
+        android:layout_height="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/ic_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="@dimen/appbar_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/ic_notifications" />
+
+
+        <ImageView
+            android:layout_marginLeft="@dimen/grid_margin_left"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/ic_transactions" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/grid_margin_top"
+            android:background="@drawable/ic_update" />
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/grid_margin_top"
+            android:layout_marginLeft="@dimen/grid_margin_left"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/ic_support" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/grid_margin_top"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/ic_profile" />
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/grid_margin_top"
+            android:layout_marginLeft="@dimen/grid_margin_left"
+            android:background="@drawable/ic_settings" />
+
+
+    </GridLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

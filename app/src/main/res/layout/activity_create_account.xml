@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/screen_padding"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".CreateAccount">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/logo_width"
+            android:layout_height="@dimen/logo_height"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/cardview_padding">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@string/cardview_font_family"
+                    android:textSize="@dimen/verify_description_font_size"
+                    />
+
+
+                <EditText
+                    android:id="@+id/name_register"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/cardview_font_family"
+                        android:text="@string/email"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/verify_description_font_size"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_user"/>
+
+
+
+                </LinearLayout>
+                <EditText
+
+                    android:id="@+id/txt_email_register"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/cardview_font_family"
+                        android:text="@string/pass"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/verify_description_font_size"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_password_lock"/>
+
+
+
+                </LinearLayout>
+
+
+                <EditText
+
+                    android:id="@+id/txt_password_register"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/cardview_font_family"
+                        android:text="Confirm Password"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/verify_description_font_size"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ic_password_lock"/>
+
+
+
+                </LinearLayout>
+
+
+                <EditText
+
+                    android:id="@+id/txt_confirm_pass_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_login_userlogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btns_height"
+            android:layout_marginTop="@dimen/verify_btn_margin_top"
+            android:text="Get Started"
+            android:fontFamily="@string/btn_font_family"
+            android:background="@drawable/btn_dark_bg"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_login"
+
+            />
+
+        <Button
+            android:id="@+id/btn_register_userlogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btns_height"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/login"
+            android:fontFamily="@string/btn_font_family"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/font_color"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login_userlogin"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txt_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@string/cardview_font_family"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/verify_description_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register_userlogin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

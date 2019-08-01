@@ -1,0 +1,26 @@
+<resources>
+
+
+
+    <string name="enter_code">Enter Code Here</string>
+    <string name="login">Log in</string>
+    <string name="phone">Phone Number</string>
+    <string name="company">Company Name</string>
+    <string name="verify_number">Varify your Phone Number</string>
+    <string name="verify_number_description">Type a code which has been sent on your phone number</string>
+    <string name="verify_email">Varify your Email Address</string>
+    <string name="verify_email_description">Type a code which has been sent on your email address</string>
+    <string name="create_account">Create Account</string>
+    <string name="app_name">TimeToClose</string>
+    <string name="proceed">Proceed</string>
+    <string name="forget">Forget Password?</string>
+    <string name="email">Email Address</string>
+    <string name="pass">Password</string>
+    <string name="terms1">By creating account you acknowledge and accept the</string>
+    <string name="terms2"> <u>Terms of Use</u></string>
+    <string name="terms3"> of the Time To Close.</string>
+    <string name="login_touch">Login with Touch ID</string>
+    <string name="profile_set"> Set up your Profile</string>
+    <string name="profile_set_description"> Type the code which has been sent on your email address</string>
+
+</resources>

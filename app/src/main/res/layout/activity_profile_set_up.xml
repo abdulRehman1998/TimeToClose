@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/screen_padding"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSetUp">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/ic_back_width"
+
+        android:layout_height="@dimen/ic_back_height"
+        android:layout_marginStart="@dimen/back_btn_margin_start"
+
+        android:layout_marginTop="@dimen/back_btn_margin_top"
+        android:background="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_verify_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/verify_margin_top"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@string/verify_font_family"
+        android:gravity="center"
+        android:text="@string/profile_set"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/verify_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="@dimen/verify_description_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/verify_description_margin_top"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@string/verify_description_font_family"
+        android:gravity="center"
+        android:text="@string/profile_set_description"
+        android:textColor="@color/font_color"
+        android:textSize="@dimen/verify_description_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/txt_verify_number_description"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verify_number" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/img_layout"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/cirlce"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verify_number_description" >
+
+     <ImageView
+
+         android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_camera"
+        android:id="@+id/img_profileSet"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verify_number_description" />
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/verify_email_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/cardview_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_font_family"
+
+                android:text="@string/company"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/verify_description_font_size"
+
+                />
+
+            <EditText
+
+                android:id="@+id/txt_company_name_profileSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_font_family"
+
+                android:text="@string/email"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/verify_description_font_size"
+
+                />
+
+            <EditText
+
+                android:id="@+id/txt_email_profileSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_font_family"
+
+                android:text="@string/phone"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/verify_description_font_size"
+
+                />
+
+            <EditText
+
+                android:id="@+id/txt_phone_profileSet"
+                android:layout_width="match_parent"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btn_register_numberverification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btns_height"
+        android:layout_marginTop="@dimen/verify_btn_margin_top"
+        android:text="@string/proceed"
+        android:fontFamily="@string/btn_font_family"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/font_color"
+        app:layout_constraintTop_toBottomOf="@+id/verify_email_cardview"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

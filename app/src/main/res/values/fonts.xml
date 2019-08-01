@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="btn_font_family">sans-serif-light</string>
+    <string name="cardview_font_family">sans-serif-light</string>
+
+    <string name="verify_font_family">sans-serif-medium</string>
+    <string name="verify_description_font_family">sans-serif-thin</string>
+
+
+
+</resources>
