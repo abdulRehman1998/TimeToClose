@@ -25,5 +25,42 @@
     <string name="login_touch">Login with Touch ID</string>
     <string name="profile_set"> Set up your Profile</string>
     <string name="profile_set_description"> Type the code which has been sent on your email address</string>
+    <string name="profile_info_heading">General Info</string>
+    <string name="person_info_full_name_heading">Full name</string>
+    <string name="person_info_email_heading">Email</string>
+    <string name="person_info_phone_heading">Phone Number</string>
+    <string name="hint"><font size="10">Add name here</font></string>
+    <string name="get_in_touch">You can <font fgcolor="#4970c0">"&apos;Get in touch&apos;"</font> our 24/7 customer service any time</string>
+    <string name="transaction_details_heading">Transaction Details</string>
+    <string name="closing_data_heading">Closing Data:</string>
+    <string name="add_date_heading">Add Date</string>
+    <string name="buyer_name">Buyer\'s Name</string>
+    <string name="buyer_number">Buyer\'s Contact Number</string>
+    <string name="seller_name">seller\'s Name</string>
+    <string name="seller_number">Seller\'s Contact Number</string>
+    <string name="property_address">Property Address</string>
+    <string name="property_type">Property Type</string>
+    <string name="seller">Seller</string>
+    <string name="title_agent">Title Agent</string>
+    <string name="law_firm">Law Firm</string>
+    <string name="broker">Broker</string>
+    <string name="attorney_name">Attorney Name</string>
+    <string name="agent_name">Agent Name</string>
+    <string name="btn_create_transaction">Create Transaction</string>
+    <string name="contact_form_heading">Contact Form</string>
+    <string name="our_contact_details">Our Contact Details</string>
+    <string name="site_email">\"Help@TimeToClose.com\"</string>
+    <string name="org_phone">+3 222 222 222</string>
+    <string name="notif_near">Notify when event date is near</string>
+    <string name="notif_bf_3">Notify 3 days before event date is due</string>
+    <string name="notif_bf_1">Notify me 1 day before event is due</string>
+    <string name="notif_same">Notify me same day when event is due</string>
+    <string name="notif_email">Notify me by email</string>
+    <string name="notif_text">Notify me by text</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="retype_pass">Retype New Password</string>
+    <string name="btn_save">Save</string>
 
 </resources>

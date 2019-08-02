@@ -40,6 +40,13 @@
     <dimen name="cardview_bold">@dimen/_16sdp</dimen>
     <dimen name="cardview_mid">@dimen/_13sdp</dimen>
     <dimen name="cardview_light">@dimen/_11sdp</dimen>
+    <dimen name="heading_large">@dimen/_14sdp</dimen>
+    <dimen name="size_appbar_title">@dimen/_20sdp</dimen>
+    <dimen name="margin_small">@dimen/_5sdp</dimen>
+    <dimen name="margin_normal">@dimen/_10sdp</dimen>
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="size_small">@dimen/_20sdp</dimen>
+    <dimen name="size_extra_small">@dimen/_10sdp</dimen>
 
 
 </resources>
