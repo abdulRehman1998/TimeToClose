@@ -119,9 +119,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-
+                android:inputType="text"
                 />
             <TextView
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@string/cardview_font_family"
@@ -138,17 +139,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
-
+                android:inputType="text"
                 />
             <TextView
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@string/cardview_font_family"
-
                 android:text="@string/phone"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/verify_description_font_size"
-
                 />
 
             <EditText
@@ -156,6 +156,7 @@
                 android:id="@+id/txt_phone_profileSet"
                 android:layout_width="match_parent"
                 android:maxLines="1"
+                android:inputType="text"
                 android:layout_height="wrap_content"
 
                 />

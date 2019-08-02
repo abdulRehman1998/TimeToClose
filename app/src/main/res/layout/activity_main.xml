@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <Button
-            android:id="@+id/home_btn_register"
+            android:id="@+id/splash_btn_register"
             android:textColor="@color/font_color"
             android:textAllCaps="false"
             android:textSize="@dimen/button_font_size"
@@ -51,7 +51,7 @@
 
         <Button
             android:fontFamily="@string/btn_font_family"
-            android:id="@+id/home_btn_login"
+            android:id="@+id/splash_btn_login"
             android:textSize="@dimen/button_font_size"
             android:textAllCaps="false"
             android:textColor="@color/font_color"

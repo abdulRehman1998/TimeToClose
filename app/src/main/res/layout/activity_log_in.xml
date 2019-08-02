@@ -97,13 +97,16 @@
             <EditText
 
                 android:id="@+id/txt_email_login"
+                android:maxLines="1"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="1"
 
                 />
 
             <LinearLayout
+
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right"

@@ -86,10 +86,12 @@
                     android:id="@+id/name_register"
                     android:layout_width="match_parent"
                     android:maxLines="1"
+                    android:inputType="text"
                     android:layout_height="wrap_content" />
 
 
                 <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
@@ -120,11 +122,13 @@
                     android:id="@+id/txt_email_register"
                     android:layout_width="match_parent"
                     android:maxLines="1"
+                    android:inputType="text"
                     android:layout_height="wrap_content"
 
                     />
 
                 <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
@@ -163,6 +167,8 @@
                     />
 
                 <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
@@ -208,7 +214,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/btn_login_userlogin"
+            android:id="@+id/btn_register_userlogin"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btns_height"
             android:layout_marginTop="@dimen/verify_btn_margin_top"
@@ -221,7 +227,7 @@
             />
 
         <Button
-            android:id="@+id/btn_register_userlogin"
+            android:id="@+id/btn_login_userlogin"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btns_height"
             android:layout_marginTop="@dimen/_5sdp"
@@ -229,7 +235,7 @@
             android:fontFamily="@string/btn_font_family"
             android:background="@drawable/btn_bg"
             android:textColor="@color/font_color"
-            app:layout_constraintTop_toBottomOf="@+id/btn_login_userlogin"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register_userlogin"
 
             />
 
@@ -246,7 +252,7 @@
             android:textSize="@dimen/verify_description_font_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_register_userlogin" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_login_userlogin" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
