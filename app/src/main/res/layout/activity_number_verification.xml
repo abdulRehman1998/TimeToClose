@@ -11,6 +11,7 @@
 
 
     <Button
+        android:id="@+id/btn_back_verify_no"
         android:layout_width="@dimen/ic_back_width"
         android:layout_height="@dimen/ic_back_height"
 
