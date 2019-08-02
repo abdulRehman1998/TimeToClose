@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="2.5"
+                android:width="0dp"
+                android:layout_height="wrap_content"
+                android:text="You just shared transaction via email"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-light"
+                />
+
+            <TextView
+                android:layout_weight="0.5"
+                android:width="0dp"
+                android:layout_height="wrap_content"
+                android:text="15 min ago"
+                android:gravity="right"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/grey"
+                android:fontFamily="sans-serif"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="2"
+                    android:width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="sent to john@123.com"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="View Details"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/appbar_left"
+                    android:fontFamily="sans-serif"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

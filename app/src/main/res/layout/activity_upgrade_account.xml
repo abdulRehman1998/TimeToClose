@@ -48,6 +48,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -367,20 +368,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@string/cardview_font_family"
-
                     android:text="Card Number"
                     android:textColor="@color/grey"
                     android:textSize="@dimen/verify_description_font_size"
-
                     />
-
                 <EditText
-
                     android:id="@+id/txt_email_profileSet"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1"
-
                     />
 
 

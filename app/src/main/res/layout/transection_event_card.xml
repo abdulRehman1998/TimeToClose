@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_font_family"
+                android:text="Event Name"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/cardview_light"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="datetime"
+                android:fontFamily="@string/cardview_bold_font_family"
+                android:text="Mr.Jon Snow"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/cardview_mid"
+                />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_font_family"
+                android:text="Due From"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/cardview_light"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_bold_font_family"
+                android:text="Buyer"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/cardview_mid"
+                />
+
+
+        </LinearLayout>
+
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            />
+
+        <view
+
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            ></view>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            />
+
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_font_family"
+                android:text="Event Date/Time"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/cardview_light"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="datetime"
+                android:fontFamily="@string/cardview_bold_font_family"
+                android:text="10-09-2019, 9:30 AM"
+                android:layout_gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/cardview_mid"
+                />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_font_family"
+                android:text="Note"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/cardview_light"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/cardview_bold_font_family"
+                android:text="Lorem Ispum"
+                android:layout_gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/cardview_mid"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+

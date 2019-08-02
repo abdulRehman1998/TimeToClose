@@ -36,7 +36,10 @@
     <dimen name="verify_description_margin_top">@dimen/_4sdp</dimen>
     <dimen name="cardview_margin_top">@dimen/_40sdp</dimen>
     <dimen name="cardview_padding">@dimen/_20sdp</dimen>
-
+    
+    <dimen name="cardview_bold">@dimen/_16sdp</dimen>
+    <dimen name="cardview_mid">@dimen/_13sdp</dimen>
+    <dimen name="cardview_light">@dimen/_11sdp</dimen>
 
 
 </resources>
