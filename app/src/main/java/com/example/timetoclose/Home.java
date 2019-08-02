@@ -6,27 +6,26 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class EmailVerification extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_email_verification);
+        setContentView(R.layout.activity_home);
 
-        ConstraintLayout mLayout=(ConstraintLayout)findViewById(R.id.layout_email_verification);
+        ConstraintLayout mLayout=(ConstraintLayout)findViewById(R.id.layout_home);
 
-        mLayout.setOnTouchListener(new OnSwipeTouchListener(EmailVerification.this) {
+        mLayout.setOnTouchListener(new OnSwipeTouchListener(Home.this) {
 
             public void onSwipeRight() {
-                startActivity(new Intent(EmailVerification.this,LogIn.class));
+                startActivity(new Intent(Home.this,NumberVerification.class));
                 finish();
             }
             public void onSwipeLeft() {
-                startActivity(new Intent(EmailVerification.this,NumberVerification.class));
+                startActivity(new Intent(Home.this,ProfileSetUp.class));
                 finish();
             }
 
         });
-
     }
 }

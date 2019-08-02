@@ -2,6 +2,19 @@
 <resources>
 
 
+    <dimen name="appbar_height">@dimen/_50sdp</dimen>
+    <dimen name="appbar_padding">@dimen/_10sdp</dimen>
+    <dimen name="upgrade_ring">@dimen/_15sdp</dimen>
+    <dimen name="upgrade_ring_margin_top">@dimen/_5sdp</dimen>
+
+    <dimen name="upgrade_duration_size">@dimen/_16sdp</dimen>
+    <dimen name="upgrade_duration_marginTop">@dimen/_8sdp</dimen>
+    <dimen name="upgrade_duration_description_size">@dimen/_8sdp</dimen>
+
+    <dimen name="upgrade_dollar">@dimen/_18sdp</dimen>
+    <dimen name="upgrade_dollar_description">@dimen/_9sdp</dimen>
+
+
     <dimen name="appbar_title">@dimen/_20sdp</dimen>
     <dimen name="btns_padding">@dimen/_8sdp</dimen>
     <dimen name="btns_height">@dimen/_35sdp</dimen>

@@ -1,9 +1,451 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#ECEFF0"
     android:layout_height="match_parent"
     tools:context=".UpgradeAccount">
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_height"
+        android:background="@drawable/appbar_bg"
+        android:padding="@dimen/appbar_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+
+            android:id="@+id/button2"
+            android:layout_width="@dimen/ic_back_width"
+            android:layout_height="@dimen/ic_back_height"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:background="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Upgrade Account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/appbar_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_upgrade_accunt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+       >
+
+
+        <TextView
+            android:id="@+id/txt_subs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/subscribe"
+            android:textColor="@color/appbar_left"
+            android:textSize="@dimen/_17sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_weekly"
+            android:layout_width="match_parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/txt_subs"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_5sdp"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/_12sdp"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="$6.00"
+
+                android:textColor="@color/appbar_left"
+                android:textSize="@dimen/upgrade_dollar"/>
+
+            <TextView
+                android:id="@+id/txt_cost2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upgrade_description1"
+                app:layout_constraintTop_toBottomOf="@id/txt_cost"
+                android:textColor="@color/appbar_left"
+                android:textSize="@dimen/upgrade_dollar_description"/>
+
+                <TextView
+                    android:id="@+id/txt_cost3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upgrade_description2"
+                    app:layout_constraintTop_toBottomOf="@id/txt_cost2"
+                    android:textColor="@color/appbar_left"
+                    android:textSize="@dimen/upgrade_dollar_description"/>
+
+                <ImageView
+                    android:id="@+id/weekly_select"
+                    android:layout_width="@dimen/upgrade_ring"
+                    android:layout_height="@dimen/upgrade_ring"
+                    android:layout_marginTop="@dimen/upgrade_ring_margin_top"
+                    android:background="@drawable/ic_ring"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_weekly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly"
+                    android:textSize="@dimen/upgrade_duration_size"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/upgrade_duration_marginTop"
+                    app:layout_constraintTop_toBottomOf="@id/weekly_select"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_weekly_expiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date 09/2020"
+                    android:textSize="@dimen/upgrade_duration_description_size"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_weekly"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_monthly"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_weekly"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_8sdp"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/_12sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_monthly_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="$20.00"
+
+                    android:textColor="@color/appbar_left"
+                    android:textSize="@dimen/upgrade_dollar"/>
+
+                <TextView
+                    android:id="@+id/txt__monthly_cost2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upgrade_description1"
+                    app:layout_constraintTop_toBottomOf="@id/txt_monthly_cost"
+                    android:textColor="@color/appbar_left"
+                    android:textSize="@dimen/upgrade_dollar_description"/>
+
+                <TextView
+                    android:id="@+id/txt_monthly_cost3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upgrade_description2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt__monthly_cost2"
+                    android:textColor="@color/appbar_left"
+                    android:textSize="@dimen/upgrade_dollar_description"/>
+
+                <ImageView
+                    android:id="@+id/monthly_select"
+                    android:layout_width="@dimen/upgrade_ring"
+                    android:layout_height="@dimen/upgrade_ring"
+                    android:layout_marginTop="@dimen/upgrade_ring_margin_top"
+                    android:background="@drawable/ic_selected"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_monthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly"
+                    android:textSize="@dimen/upgrade_duration_size"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/upgrade_duration_marginTop"
+                    app:layout_constraintTop_toBottomOf="@id/monthly_select"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_monthly_expiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date 09/2020"
+                    android:textSize="@dimen/upgrade_duration_description_size"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_monthly"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_annually"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_monthly"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_8sdp"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/_12sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_annually_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="$200"
+
+                    android:textColor="@color/appbar_left"
+                    android:textSize="@dimen/upgrade_dollar"/>
+
+                <TextView
+                    android:id="@+id/txt__annually_cost2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upgrade_description1"
+                    app:layout_constraintTop_toBottomOf="@id/txt_annually_cost"
+                    android:textColor="@color/appbar_left"
+                    android:textSize="@dimen/upgrade_dollar_description"/>
+
+                <TextView
+                    android:id="@+id/txt_annually_cost3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upgrade_description2"
+                    app:layout_constraintTop_toBottomOf="@+id/txt__annually_cost2"
+                    android:textColor="@color/appbar_left"
+                    android:textSize="@dimen/upgrade_dollar_description"/>
+
+                <ImageView
+                    android:id="@+id/annually_select"
+                    android:layout_width="@dimen/upgrade_ring"
+                    android:layout_height="@dimen/upgrade_ring"
+                    android:layout_marginTop="@dimen/upgrade_ring_margin_top"
+                    android:background="@drawable/ic_ring"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_annually"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Annually"
+                    android:textSize="@dimen/upgrade_duration_size"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/upgrade_duration_marginTop"
+                    app:layout_constraintTop_toBottomOf="@id/annually_select"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_annually_expiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date 09/2020"
+                    android:textSize="@dimen/upgrade_duration_description_size"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_annually"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txt_card_det"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Card Details"
+            android:textColor="@color/appbar_left"
+            android:textSize="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_annually" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_card_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_card_det">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/cardview_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/cardview_font_family"
+                    android:text="Card Holder's Name"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/verify_description_font_size"
+
+                    />
+
+                <EditText
+
+                    android:id="@+id/txt_company_name_profileSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/cardview_font_family"
+
+                    android:text="Card Number"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/verify_description_font_size"
+
+                    />
+
+                <EditText
+
+                    android:id="@+id/txt_email_profileSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+
+                    />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/sec_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Security Code"
+                        android:fontFamily="@string/cardview_font_family"
+                        android:textSize="@dimen/verify_description_font_size"
+                        android:textColor="@color/grey"/>
+
+                    <EditText
+                        app:layout_constraintTop_toBottomOf="@id/sec_code"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <TextView
+                        android:id="@+id/expiry_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_40sdp"
+                        android:fontFamily="@string/cardview_font_family"
+                        android:text="Expiry Date"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/verify_description_font_size"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <EditText
+                        app:layout_constraintTop_toBottomOf="@id/expiry_date"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_update_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btns_height"
+            android:layout_marginTop="@dimen/verify_btn_margin_top"
+            android:text="Update"
+            android:fontFamily="@string/btn_font_family"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/font_color"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_card_details"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

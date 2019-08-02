@@ -5,8 +5,11 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="font_color">#FFFFFF</color>
     <color name="white">#FFFFFF</color>
+    <color name="appbar_left">#1d5297</color>
+    <color name="appbar_right">#4579bf</color>
     <color name="bg_color">#1DA1F2</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="grey">#686666</color>
 
 </resources>

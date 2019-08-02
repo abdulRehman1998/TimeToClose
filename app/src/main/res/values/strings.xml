@@ -1,6 +1,9 @@
 <resources>
 
+    <string name="upgrade_description1">Can share Transections</string>
+    <string name="upgrade_description2">Create unlimited transections</string>
 
+    <string name="subscribe">Subscribe and get unlimited access</string>
     <string name="enter_code">Enter Code Here</string>
     <string name="login">Log in</string>
     <string name="phone">Phone Number</string>
