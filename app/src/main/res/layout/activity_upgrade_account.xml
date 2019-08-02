@@ -22,7 +22,7 @@
 
         <Button
 
-            android:id="@+id/button2"
+            android:id="@+id/btn_back_upgrade"
             android:layout_width="@dimen/ic_back_width"
             android:layout_height="@dimen/ic_back_height"
             android:layout_marginStart="@dimen/_12sdp"
@@ -379,7 +379,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1"
-                    android:inputType="text"
+                    android:inputType="number"
+
                     />
 
 
@@ -400,7 +401,7 @@
                         app:layout_constraintTop_toBottomOf="@id/sec_code"
                         android:layout_width="@dimen/_100sdp"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
+                        android:inputType="number"
                         android:maxLines="1"
                         />
 
@@ -418,7 +419,7 @@
                     <EditText
                         app:layout_constraintTop_toBottomOf="@id/expiry_date"
                         android:layout_width="@dimen/_100sdp"
-                        android:inputType="text"
+                        android:inputType="date"
                         android:maxLines="1"
                         android:layout_height="wrap_content"
                         app:layout_constraintEnd_toEndOf="parent"

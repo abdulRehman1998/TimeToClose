@@ -156,7 +156,7 @@
                 android:id="@+id/txt_phone_profileSet"
                 android:layout_width="match_parent"
                 android:maxLines="1"
-                android:inputType="text"
+                android:inputType="phone"
                 android:layout_height="wrap_content"
 
                 />
