@@ -12,4 +12,8 @@
 
     <color name="grey">#686666</color>
 
+    <color name="light_blue">#4970c0</color>
+    <color name="black">#000000</color>
+    <color name="btn_color_blue">#409bfc</color>
+
 </resources>
