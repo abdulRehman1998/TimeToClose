@@ -4,8 +4,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.timetoclose.CreateTransaction;
-import com.example.timetoclose.MyTransactions;
+import com.example.timetoclose.CreateTransactionFragment;
+import com.example.timetoclose.MyTransactionsFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
@@ -17,10 +17,10 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch(position){
             case 0:
-                Fragment createTransaction = new CreateTransaction();
+                Fragment createTransaction = new CreateTransactionFragment();
                 return createTransaction;
             case 1:
-                Fragment myTransaction = new MyTransactions();
+                Fragment myTransaction = new MyTransactionsFragment();
                 return myTransaction;
                 default:
                     return null;

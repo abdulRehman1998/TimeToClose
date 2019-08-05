@@ -10,7 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-public class CreateTransaction extends Fragment {
+public class CreateTransactionFragment extends Fragment {
+
+
 
     @Nullable
     @Override
