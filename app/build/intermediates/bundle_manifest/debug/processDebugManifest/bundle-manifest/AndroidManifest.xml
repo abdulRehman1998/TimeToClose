@@ -47,13 +47,15 @@
         </activity>
         <activity android:name="com.example.timetoclose.UpgradeAccount" />
         <activity android:name="com.example.timetoclose.EditProfile" >
+        </activity>
+        <activity android:name="com.example.timetoclose.Home" />
+        <activity android:name="com.example.timetoclose.Settings" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.timetoclose.Home" />
         <activity android:name="com.example.timetoclose.ProfileSetUp" />
         <activity android:name="com.example.timetoclose.CreateAccount" />
         <activity android:name="com.example.timetoclose.LogIn" />

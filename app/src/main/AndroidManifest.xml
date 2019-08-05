@@ -37,13 +37,17 @@
         </activity>
         <activity android:name=".UpgradeAccount" />
         <activity android:name=".EditProfile" >
+
+        </activity>
+        <activity android:name=".Home" />
+        <activity android:name=".Settings" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Home" />
+
         <activity android:name=".ProfileSetUp" />
         <activity android:name=".CreateAccount" />
         <activity android:name=".LogIn" />
