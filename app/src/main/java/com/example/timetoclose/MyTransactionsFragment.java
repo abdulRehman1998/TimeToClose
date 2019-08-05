@@ -18,10 +18,10 @@ import com.example.timetoclose.Adapters.ViewPagerAdapter;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MyTransactions extends Fragment {
+public class MyTransactionsFragment extends Fragment {
 
 
-    public MyTransactions() {
+    public MyTransactionsFragment() {
         // Required empty public constructor
     }
 
@@ -36,8 +36,6 @@ public class MyTransactions extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        ViewPager viewPager = view.findViewById(R.id.view_pager);
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getChildFragmentManager());
-        viewPager.setAdapter(adapter);
+
     }
 }
