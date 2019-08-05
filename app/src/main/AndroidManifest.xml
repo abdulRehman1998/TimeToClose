@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Transactions"></activity>
+        <activity android:name=".Notifications">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Transactions">
+
+        </activity>
         <activity android:name=".ContactUs" />
         <activity android:name=".AddEvent" />
         <activity android:name=".UpgradeAccount" />
@@ -19,14 +28,7 @@
         <activity android:name=".LogIn" />
         <activity android:name=".NumberVerification" />
         <activity android:name=".EmailVerification" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".CreateTransactionFragment" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
