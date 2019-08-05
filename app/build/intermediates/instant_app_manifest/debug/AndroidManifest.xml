@@ -9,20 +9,51 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="28" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:configChanges="orientation"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.timetoclose.Transactions" />
-        <activity android:name="com.example.timetoclose.ContactUs" />
-        <activity android:name="com.example.timetoclose.AddEvent" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.timetoclose.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity android:name="com.example.timetoclose.Transactions" >
+        </activity>
+        <activity android:name="com.example.timetoclose.ContactUs" >
+        </activity>
+        <activity android:name="com.example.timetoclose.AddEvent" >
+        </activity>
         <activity android:name="com.example.timetoclose.UpgradeAccount" />
+        <activity android:name="com.example.timetoclose.EditProfile" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.timetoclose.Home" />
         <activity android:name="com.example.timetoclose.ProfileSetUp" />
         <activity android:name="com.example.timetoclose.CreateAccount" />
@@ -30,13 +61,7 @@
         <activity android:name="com.example.timetoclose.NumberVerification" />
         <activity android:name="com.example.timetoclose.EmailVerification" />
         <activity android:name="com.example.timetoclose.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name="com.example.timetoclose.CreateTransaction" />
     </application>
 
 </manifest>

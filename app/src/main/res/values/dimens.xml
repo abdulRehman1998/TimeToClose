@@ -9,7 +9,7 @@
 
     <dimen name="upgrade_duration_size">@dimen/_16sdp</dimen>
     <dimen name="upgrade_duration_marginTop">@dimen/_8sdp</dimen>
-    <dimen name="upgrade_duration_description_size">@dimen/_8sdp</dimen>
+    <dimen name="upgrade_duration_description_size">@dimen/_10sdp</dimen>
 
     <dimen name="upgrade_dollar">@dimen/_18sdp</dimen>
     <dimen name="upgrade_dollar_description">@dimen/_9sdp</dimen>

@@ -122,7 +122,7 @@
                     android:textSize="@dimen/upgrade_dollar_description"/>
 
                 <ImageView
-                    android:id="@+id/weekly_select"
+                    android:id="@+id/img_weekly_select"
                     android:layout_width="@dimen/upgrade_ring"
                     android:layout_height="@dimen/upgrade_ring"
                     android:layout_marginTop="@dimen/upgrade_ring_margin_top"
@@ -138,7 +138,7 @@
                     android:textSize="@dimen/upgrade_duration_size"
                     android:textColor="@android:color/black"
                     android:layout_marginTop="@dimen/upgrade_duration_marginTop"
-                    app:layout_constraintTop_toBottomOf="@id/weekly_select"
+                    app:layout_constraintTop_toBottomOf="@id/img_weekly_select"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
@@ -201,7 +201,7 @@
                     android:textSize="@dimen/upgrade_dollar_description"/>
 
                 <ImageView
-                    android:id="@+id/monthly_select"
+                    android:id="@+id/img_monthly_select"
                     android:layout_width="@dimen/upgrade_ring"
                     android:layout_height="@dimen/upgrade_ring"
                     android:layout_marginTop="@dimen/upgrade_ring_margin_top"
@@ -217,7 +217,7 @@
                     android:textSize="@dimen/upgrade_duration_size"
                     android:textColor="@android:color/black"
                     android:layout_marginTop="@dimen/upgrade_duration_marginTop"
-                    app:layout_constraintTop_toBottomOf="@id/monthly_select"
+                    app:layout_constraintTop_toBottomOf="@id/img_monthly_select"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
@@ -280,7 +280,7 @@
                     android:textSize="@dimen/upgrade_dollar_description"/>
 
                 <ImageView
-                    android:id="@+id/annually_select"
+                    android:id="@+id/img_annually_select"
                     android:layout_width="@dimen/upgrade_ring"
                     android:layout_height="@dimen/upgrade_ring"
                     android:layout_marginTop="@dimen/upgrade_ring_margin_top"
@@ -296,7 +296,7 @@
                     android:textSize="@dimen/upgrade_duration_size"
                     android:textColor="@android:color/black"
                     android:layout_marginTop="@dimen/upgrade_duration_marginTop"
-                    app:layout_constraintTop_toBottomOf="@id/annually_select"
+                    app:layout_constraintTop_toBottomOf="@id/img_annually_select"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView

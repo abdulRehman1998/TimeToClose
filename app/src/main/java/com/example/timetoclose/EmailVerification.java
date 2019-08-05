@@ -5,12 +5,18 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class EmailVerification extends AppCompatActivity {
 
     Button btnBack;
+    Button btnProceed;
+    EditText txtCode;
+
+    String mCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +24,20 @@ public class EmailVerification extends AppCompatActivity {
         setContentView(R.layout.activity_email_verification);
 
         swipe();
+
+        btnProceed=(Button)findViewById(R.id.btn_proceed_email_verification);
+        btnProceed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                txtCode =(EditText)findViewById(R.id.txt_email_verification);
+                mCode =txtCode.getText().toString();
+
+                inputChecks();
+            }
+
+        });
+
 
         btnBack =(Button)findViewById(R.id.btn_back_verify_email);
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -51,4 +71,14 @@ public class EmailVerification extends AppCompatActivity {
 
         });
     }
+
+    void inputChecks(){
+
+        if (TextUtils.isEmpty(mCode)) {
+            txtCode.setError("Please Enter the Code");
+
+        }
+
+    }
+
 }
