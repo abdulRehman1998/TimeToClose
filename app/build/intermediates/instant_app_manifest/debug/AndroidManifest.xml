@@ -29,6 +29,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.timetoclose.TransactionEvents" />
         <activity android:name="com.example.timetoclose.Transactions" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,8 +46,7 @@
         <activity android:name="com.example.timetoclose.LogIn" />
         <activity android:name="com.example.timetoclose.NumberVerification" />
         <activity android:name="com.example.timetoclose.EmailVerification" />
-        <activity android:name="com.example.timetoclose.MainActivity" >
-        </activity>
+        <activity android:name="com.example.timetoclose.MainActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

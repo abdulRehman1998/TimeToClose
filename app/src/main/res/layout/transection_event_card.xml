@@ -71,13 +71,13 @@
             android:layout_weight="0.5"
             />
 
-        <view
+        <View
 
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
 
-            ></view>
+            ></View>
 
         <androidx.legacy.widget.Space
             android:layout_width="wrap_content"
