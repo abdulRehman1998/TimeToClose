@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.timetoclose">
-    <uses-permission android:name="android.permission.INTERNET" />
-
-
 
     <application
         android:allowBackup="true"
@@ -13,50 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
-            android:exported="false"
-            android:grantUriPermissions="true"
-            tools:replace="android:authorities">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/picker_provider_paths" />
-        </provider>
-
-
-
-        <activity android:name=".Transactions">
-
-        </activity>
-        <activity android:name=".ContactUs" >
-            </activity>
-        <activity android:name=".AddEvent" >
-
-        </activity>
+        <activity android:name=".Transactions"></activity>
+        <activity android:name=".ContactUs" />
+        <activity android:name=".AddEvent" />
         <activity android:name=".UpgradeAccount" />
-        <activity android:name=".EditProfile" >
-
-        </activity>
         <activity android:name=".Home" />
-        <activity android:name=".Settings" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
         <activity android:name=".ProfileSetUp" />
         <activity android:name=".CreateAccount" />
         <activity android:name=".LogIn" />
         <activity android:name=".NumberVerification" />
         <activity android:name=".EmailVerification" />
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

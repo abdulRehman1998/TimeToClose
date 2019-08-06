@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Transactions">
 
-    <androidx.viewpager.widget.ViewPager
+    <com.example.timetoclose.CustomViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -20,6 +20,6 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    </androidx.viewpager.widget.ViewPager>
+    </com.example.timetoclose.CustomViewPager>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

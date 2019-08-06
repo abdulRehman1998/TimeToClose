@@ -24,7 +24,7 @@
     <dimen name="grid_margin_top">@dimen/_20sdp</dimen>
     <dimen name="logo_height">@dimen/_80sdp</dimen>
     <dimen name="logo_width">@dimen/_150sdp</dimen>
-    <dimen name="screen_padding">@dimen/_15sdp</dimen>
+    <dimen name="screen_padding">@dimen/_10sdp</dimen>
     <dimen name="button_font_size">@dimen/_15sdp</dimen>
     <dimen name="ic_back_width">@dimen/_13sdp</dimen>
     <dimen name="ic_back_height">@dimen/_10sdp</dimen>
@@ -48,6 +48,7 @@
     <dimen name="text_small">10sp</dimen>
     <dimen name="size_small">@dimen/_20sdp</dimen>
     <dimen name="size_extra_small">@dimen/_10sdp</dimen>
+    <dimen name="size_swipe_btn">@dimen/_182sdp</dimen>
 
 
 </resources>
