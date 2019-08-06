@@ -45,7 +45,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.timetoclose.CreateTransactionFragment" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
