@@ -16,11 +16,7 @@
         <activity android:name=".AddEvent" />
         <activity android:name=".UpgradeAccount" />
         <activity android:name=".Home" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ProfileSetUp" />
         <activity android:name=".CreateAccount" />
@@ -28,7 +24,11 @@
         <activity android:name=".NumberVerification" />
         <activity android:name=".EmailVerification" />
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
