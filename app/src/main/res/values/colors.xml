@@ -17,5 +17,7 @@
     <color name="light_blue">#4970c0</color>
     <color name="black">#000000</color>
     <color name="btn_color_blue">#409bfc</color>
+    <color name="btn_green">#21f780</color>
+    <color name="red_btn">#fd262b</color>
 
 </resources>

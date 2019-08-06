@@ -31,6 +31,7 @@
 
 
             <TextView
+                android:id="@+id/tv_event_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="datetime"
@@ -51,6 +52,7 @@
                 android:textSize="@dimen/cardview_light"
                 />
             <TextView
+                android:id="@+id/tv_due_from"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@string/cardview_bold_font_family"
@@ -104,6 +106,7 @@
 
 
             <TextView
+                android:id="@+id/tv_event_date_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="datetime"
@@ -126,6 +129,7 @@
                 android:textSize="@dimen/cardview_light"
                 />
             <TextView
+                android:id="@+id/tv_note"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@string/cardview_bold_font_family"
