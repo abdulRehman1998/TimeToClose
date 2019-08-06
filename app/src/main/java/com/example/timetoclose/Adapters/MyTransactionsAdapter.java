@@ -1,5 +1,6 @@
 package com.example.timetoclose.Adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -10,11 +11,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.timetoclose.AddEvent;
 import com.example.timetoclose.OnSwipeTouchListener;
 import com.example.timetoclose.R;
+import com.example.timetoclose.TransactionEvents;
+import com.example.timetoclose.Transactions;
 import com.example.timetoclose.UpgradeAccount;
 
 public class MyTransactionsAdapter extends RecyclerView.Adapter<MyTransactionsAdapter.ViewHolder> {
@@ -29,28 +33,36 @@ public class MyTransactionsAdapter extends RecyclerView.Adapter<MyTransactionsAd
     @Override
     public ViewHolder onCreateViewHolder(@NonNull final ViewGroup parent, int viewType) {
         final View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.transection_card, parent, false);
-        v.setOnTouchListener(new OnSwipeTouchListener(parent.getContext()) {
+//        v.setOnTouchListener(new OnSwipeTouchListener(parent.getContext()) {
+//
+//            Button btnEdit = v.findViewById(R.id.btn_edit);
+//            Button btnDelete = v.findViewById(R.id.btn_delete);
+//
+//            public void onSwipeRight() {
+//                if (btnDelete.getVisibility() == View.VISIBLE) {
+//                    btnDelete.setVisibility(View.GONE);
+//                } else
+//                    btnEdit.setVisibility(View.VISIBLE);
+//
+//            }
+//
+//            public void onSwipeLeft() {
+//                if (btnEdit.getVisibility() == View.VISIBLE)
+//                    btnEdit.setVisibility(View.GONE);
+//                else {
+//                    btnDelete.setVisibility(View.VISIBLE);
+//                }
+//            }
+//
+//        });
 
-            Button btnEdit = v.findViewById(R.id.btn_edit);
-            Button btnDelete = v.findViewById(R.id.btn_delete);
-
-            public void onSwipeRight() {
-                if (btnDelete.getVisibility() == View.VISIBLE) {
-                    btnDelete.setVisibility(View.GONE);
-                } else
-                    btnEdit.setVisibility(View.VISIBLE);
-
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, TransactionEvents.class));
             }
-
-            public void onSwipeLeft() {
-                if (btnEdit.getVisibility() == View.VISIBLE)
-                    btnEdit.setVisibility(View.GONE);
-                else {
-                    btnDelete.setVisibility(View.VISIBLE);
-                }
-            }
-
         });
+
         ViewHolder vh = new ViewHolder(v);
 
         return vh;
@@ -63,7 +75,7 @@ public class MyTransactionsAdapter extends RecyclerView.Adapter<MyTransactionsAd
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 6;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
