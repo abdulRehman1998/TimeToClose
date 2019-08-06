@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/aniqurrehman042/StudioProjects/InternshipProject/TimeToClose/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "/home/aniqurrehman042/.gradle/caches/transforms-2/files-2.1/810c6e1300c3a7ea2ebdedcadc5cb65f/res/values-watch-v21/values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}
