@@ -26,25 +26,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.timetoclose.Transactions" />
+        <activity android:name="com.example.timetoclose.Transactions" >
+        </activity>
         <activity android:name="com.example.timetoclose.ContactUs" />
         <activity android:name="com.example.timetoclose.AddEvent" />
         <activity android:name="com.example.timetoclose.UpgradeAccount" />
-        <activity android:name="com.example.timetoclose.Home" />
-        <activity android:name="com.example.timetoclose.ProfileSetUp" />
-        <activity android:name="com.example.timetoclose.CreateAccount" />
-        <activity android:name="com.example.timetoclose.LogIn" />
-        <activity android:name="com.example.timetoclose.NumberVerification" />
-        <activity android:name="com.example.timetoclose.EmailVerification" />
-        <activity android:name="com.example.timetoclose.MainActivity" >
+        <activity android:name="com.example.timetoclose.Home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.timetoclose.CreateTransactionFragment" />
+        <activity android:name="com.example.timetoclose.ProfileSetUp" />
+        <activity android:name="com.example.timetoclose.CreateAccount" />
+        <activity android:name="com.example.timetoclose.LogIn" />
+        <activity android:name="com.example.timetoclose.NumberVerification" />
+        <activity android:name="com.example.timetoclose.EmailVerification" />
+        <activity android:name="com.example.timetoclose.MainActivity" >
+        </activity>
 
         <provider
             android:name="androidx.core.content.FileProvider"
