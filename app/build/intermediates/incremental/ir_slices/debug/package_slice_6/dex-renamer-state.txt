@@ -1,0 +1,4 @@
+#Tue Aug 06 12:04:16 PKT 2019
+base.0=/home/aniqurrehman042/StudioProjects/InternshipProject/TimeToClose/app/build/intermediates/transforms/dexMerger/debug/6
+path.0=classes.dex
+renamed.0=classes.dex
