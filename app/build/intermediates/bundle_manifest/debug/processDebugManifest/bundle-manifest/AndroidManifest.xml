@@ -26,8 +26,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.timetoclose.Transactions" />
+        <activity android:name="com.example.timetoclose.Transactions" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.timetoclose.ContactUs" />
         <activity android:name="com.example.timetoclose.AddEvent" />
         <activity android:name="com.example.timetoclose.UpgradeAccount" />
@@ -38,13 +45,7 @@
         <activity android:name="com.example.timetoclose.NumberVerification" />
         <activity android:name="com.example.timetoclose.EmailVerification" />
         <activity android:name="com.example.timetoclose.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name="com.example.timetoclose.CreateTransactionFragment" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -55,6 +56,10 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/picker_provider_paths" />
         </provider>
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.timetoclose.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>
