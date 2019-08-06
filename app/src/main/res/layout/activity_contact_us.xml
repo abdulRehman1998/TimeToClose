@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#ECEFF0"
+    android:background="@color/bg_grey"
     android:layout_height="match_parent"
     tools:context=".ContactUs">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
@@ -52,110 +53,137 @@
         app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
         android:padding="@dimen/screen_padding"
         >
-
-
-
-
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardview_add_event"
+            android:id="@+id/cv_contact_form"
             android:layout_width="match_parent"
-
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_280sdp"
-                android:padding="@dimen/cardview_padding">
-
-
-                <TextView
-                    android:id="@+id/contact_form"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@string/verify_font_family"
-                    android:text="Contact Form"
-                    android:textColor="@color/appbar_left"
-                    android:textSize="@dimen/_20sdp" />
-
+                android:layout_height="wrap_content"
+                android:padding="@dimen/screen_padding">
 
                 <TextView
-                    android:id="@+id/txt_email_contact"
+                    android:id="@+id/tv_contact_form_heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:fontFamily="@string/cardview_font_family"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/contact_form_heading"
+                    android:textSize="@dimen/heading_large"
+                    android:textColor="@color/light_blue"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_email_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_contact_form_heading"
+                    app:layout_constraintLeft_toLeftOf="parent"
                     android:text="@string/email"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/verify_description_font_size"
-                    app:layout_constraintTop_toBottomOf="@id/contact_form"
-
-                    />
+                    android:layout_marginTop="@dimen/margin_normal"/>
 
                 <EditText
-
-                    android:id="@+id/txt_notes_contact"
+                    android:id="@+id/txt_email_contact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:maxLines="1"
-                    app:layout_constraintTop_toBottomOf="@id/txt_email_contact"
-
-                    />
-
+                    android:inputType="text"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_email_heading"
+                    app:layout_constraintLeft_toLeftOf="parent" />
 
                 <TextView
-                    android:id="@+id/add_notes"
+                    android:id="@+id/tv_message_heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:fontFamily="@string/cardview_font_family"
-                    android:text="Add Notes"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/verify_description_font_size"
-                    app:layout_constraintTop_toBottomOf="@id/txt_notes_contact"
-
-                    />
+                    android:text="Message"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_email_contact"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
 
                 <EditText
-
-                    android:id="@+id/txt_add_notes_contact"
+                    android:id="@+id/txt_message_contact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/_3sdp"
+                    android:lines="8"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_message_heading"
                     android:hint="type message here"
-                    android:background="#FFFFFF"
-                    android:textSize="@dimen/upgrade_duration_description_size"
-                    app:layout_constraintTop_toBottomOf="@id/add_notes"
-
-
+                    android:gravity="top"
                     />
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/btn_submit_event"
+            android:id="@+id/btn_save_contact"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/btns_height"
-            android:layout_marginTop="@dimen/verify_btn_margin_top"
-            android:text="Submit"
-            android:fontFamily="@string/btn_font_family"
-            android:background="@drawable/btn_bg"
-            android:textColor="@color/font_color"
-            app:layout_constraintTop_toBottomOf="@+id/cardview_add_event"
-
-            />
-
-
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            app:layout_constraintTop_toBottomOf="@+id/cv_contact_form"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@color/btn_color_blue"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/ic_assistance"
+        app:layout_constraintBottom_toTopOf="@+id/tv_customer_service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
+    <TextView
+        android:id="@+id/tv_customer_service"
+        app:layout_constraintBottom_toTopOf="@+id/tv_contact_details_heading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/text_small"
+        android:text="@string/get_in_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/tv_contact_details_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="@string/our_contact_details"
+        android:textColor="@color/light_blue"
+        app:layout_constraintBottom_toTopOf="@+id/tv_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="@string/site_email"
+        app:layout_constraintBottom_toTopOf="@+id/tv_phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
-
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/org_phone"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

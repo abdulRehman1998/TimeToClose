@@ -85,7 +85,7 @@
 
             <EditText
 
-                android:id="@+id/txt_email_login"
+                android:id="@+id/txt_email_verification"
                 android:layout_width="match_parent"
                 android:maxLines="1"
                 android:inputType="text"
@@ -100,7 +100,7 @@
 
 
     <Button
-        android:id="@+id/btn_register_numberverification"
+        android:id="@+id/btn_proceed_email_verification"
         android:layout_width="match_parent"
         android:layout_height="@dimen/btns_height"
         android:layout_marginTop="@dimen/verify_btn_margin_top"

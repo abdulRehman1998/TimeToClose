@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_grey"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="@dimen/_10sdp">
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_height"
+        android:background="@drawable/appbar_bg"
+        android:padding="@dimen/appbar_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+
+            android:id="@+id/button2"
+            android:layout_width="@dimen/ic_back_width"
+            android:layout_height="@dimen/ic_back_height"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:background="@drawable/ic_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="@dimen/appbar_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+        android:padding="@dimen/screen_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
 
     <TextView
         android:id="@+id/tv_notifications_heading"
@@ -27,6 +74,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:padding="@dimen/setting_card_padding"
             android:layout_height="wrap_content">
 
             <TextView
@@ -42,7 +90,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:track="@drawable/ic_greyonbar"
-                android:thumb="@drawable/ic_bluecircle"/>
+                android:thumb="@drawable/ic_bluecircle"
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -59,6 +108,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:padding="@dimen/setting_card_padding"
             android:layout_height="wrap_content">
 
             <TextView
@@ -91,6 +141,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:padding="@dimen/setting_card_padding"
             android:layout_height="wrap_content">
 
             <TextView
@@ -123,6 +174,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:padding="@dimen/setting_card_padding"
             android:layout_height="wrap_content">
 
             <TextView
@@ -155,6 +207,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:padding="@dimen/setting_card_padding"
             android:layout_height="wrap_content">
 
             <TextView
@@ -186,6 +239,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:padding="@dimen/setting_card_padding"
             android:layout_height="wrap_content">
 
             <TextView
@@ -226,11 +280,12 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_ch_pass"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="@dimen/margin_small">
+        android:layout_marginTop="@dimen/margin_normal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
             android:orientation="vertical">
 
             <TextView
@@ -273,8 +328,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_save"
+        android:layout_marginTop="@dimen/_10sdp"
         app:layout_constraintTop_toBottomOf="@+id/cv_ch_pass"
         android:background="@color/btn_color_blue"
         android:textColor="@color/white"/>
 
+</androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

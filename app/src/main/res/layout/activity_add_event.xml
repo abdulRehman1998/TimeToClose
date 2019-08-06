@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@string/cardview_font_family"
                     app:layout_constraintTop_toBottomOf="@id/event_details"
-                    android:text="@string/company"
+                    android:text="Event Name"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/verify_description_font_size"
@@ -96,8 +96,10 @@
                 <EditText
 
                     app:layout_constraintTop_toBottomOf="@id/event_name"
-                    android:id="@+id/txt_event_name_addE"
+                    android:id="@+id/txt_event_name_add"
                     android:layout_width="match_parent"
+                    android:fontFamily="@string/verify_font_family"
+                    android:textSize="@dimen/_16sdp"
                     android:layout_height="wrap_content"
                     android:maxLines="1"
 
@@ -106,9 +108,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@string/cardview_font_family"
-                    app:layout_constraintTop_toBottomOf="@id/txt_event_name_addE"
+                    app:layout_constraintTop_toBottomOf="@id/txt_event_name_add"
                     android:id="@+id/due_from"
-                    android:text="@string/email"
+                    android:text="Due From"
                     android:textColor="@android:color/black"
                     android:textSize="@dimen/verify_description_font_size"
 
@@ -128,11 +130,13 @@
                 >
 
                 <LinearLayout
+                    android:id="@+id/layout_buyer_addevent"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent">
 
                     <TextView
+                        android:id="@+id/txtBuyer"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Buyer"
@@ -142,15 +146,15 @@
 
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
-
+                    android:id="@+id/layout_seller_addevent"
                     android:background="@drawable/selector_hollow_bar"
                     android:layout_height="match_parent">
 
                     <TextView
+                        android:id="@+id/txtSeller"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Seller"
@@ -160,12 +164,13 @@
 
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
+                    android:id="@+id/layout_agents_addevent"
                     android:layout_height="match_parent">
                     <TextView
+                        android:id="@+id/txtAgents"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Agents"
@@ -176,14 +181,18 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_weight="1"
+                    android:id="@+id/layout_title_addevent"
                     android:layout_height="match_parent">
                     <TextView
+                        android:id="@+id/txtTitle"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Title Agent"
                         android:textColor="@color/appbar_left"
                         android:gravity="center"/>
                 </LinearLayout>
+
+
             </LinearLayout>
 
 
@@ -201,22 +210,54 @@
 
                     />
 
-                <EditText
-
+                <LinearLayout
+                    android:id="@+id/layout_date"
                     app:layout_constraintTop_toBottomOf="@id/event_date"
-                    android:id="@+id/txt_event_date"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/txt_event_date_add"
                     android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:text="00-00-00"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@string/verify_font_family"
+                    android:textSize="@dimen/_16sdp"
                     android:maxLines="1"
 
                     />
+                    <TextView
 
+                        android:id="@+id/txt_event_time_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/verify_font_family"
+                        android:textSize="@dimen/_16sdp"
+                        android:text="00:00 "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:maxLines="1"
+
+                        />
+                    <ImageView
+                        android:id="@+id/img_calender"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/calender"/>
+
+                </LinearLayout>
                 <TextView
-                    android:id="@+id/add_notes"
+                    android:id="@+id/txt_notes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@string/cardview_font_family"
-                    app:layout_constraintTop_toBottomOf="@id/txt_event_date"
+                    app:layout_constraintTop_toBottomOf="@id/layout_date"
                     android:text="Add Notes"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:textColor="@android:color/black"
@@ -226,8 +267,8 @@
 
                 <EditText
 
-                    app:layout_constraintTop_toBottomOf="@id/add_notes"
-                    android:id="@+id/txt_note_event"
+                    app:layout_constraintTop_toBottomOf="@id/txt_notes"
+                    android:id="@+id/txt_note_add_event"
                     android:hint="Add notes here"
                     android:textSize="@dimen/upgrade_duration_description_size"
                     android:layout_width="match_parent"
@@ -242,7 +283,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/btn_submit_event"
+            android:id="@+id/btn_submit_add_event"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btns_height"
             android:layout_marginTop="@dimen/verify_btn_margin_top"

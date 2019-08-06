@@ -5,17 +5,34 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class NumberVerification extends AppCompatActivity {
 
+    Button btnProceed;
     Button btnBack;
+    EditText txtCode;
+
+    String mCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_number_verification);
+
+        btnProceed=(Button)findViewById(R.id.btn_proceed_number_verfication);
+        btnProceed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                txtCode =(EditText)findViewById(R.id.txt_number_verication);
+                mCode=txtCode.getText().toString();
+
+                inputChecks();
+            }
+        });
 
         swipe();
 
@@ -48,6 +65,15 @@ public class NumberVerification extends AppCompatActivity {
             }
 
         });
+    }
+
+    void inputChecks(){
+
+        if (TextUtils.isEmpty(mCode)) {
+            txtCode.setError("Please Enter the Code");
+
+        }
+
     }
 
 
